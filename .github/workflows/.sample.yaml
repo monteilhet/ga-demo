@@ -1,0 +1,10 @@
+name: sample
+on: push
+jobs:
+    first:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Welcome
+          run: echo Welcome
+        - name: read file
+          run: cat README.md     
