@@ -7,7 +7,10 @@ jobs:
           # https://github.com/marketplace/actions/checkout --- https://github.com/actions/checkout
         - name: checkout repo
           uses: actions/checkout@v4
-        - name: Welcome
-          run: echo Welcome
-        - name: read file
-          run: cat README.md     
+        - name: List and read file
+          run: | 
+            echo Welcome Github action jog
+            ls -ltra
+            cat README.md
+        - name: Generate Ascii Art
+          run: cowsay -f dragon "Run for cover" >> dragon.txt
