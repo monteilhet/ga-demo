@@ -4,6 +4,9 @@ jobs:
     first:
         runs-on: ubuntu-latest
         steps:
+          # https://github.com/marketplace/actions/checkout --- https://github.com/actions/checkout
+        - name: checkout repo
+          uses: actions/checkout@v4
         - name: Welcome
           run: echo Welcome
         - name: read file
