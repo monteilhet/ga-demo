@@ -12,5 +12,11 @@ jobs:
             echo Welcome Github action jog
             ls -ltra
             cat README.md
+        - name: Install cowsay
+          run: sudo apt-get install -y cowsay
+
         - name: Generate Ascii Art
           run: cowsay -f dragon "Run for cover" >> dragon.txt
+
+        - name: Read file
+          run: cat dragon.txt
